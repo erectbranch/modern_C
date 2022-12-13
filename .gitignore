@@ -1,5 +1,6 @@
 .DS_Store
 appendix/
+.vscode/
 
 # Prerequisites
 *.d
