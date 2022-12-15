@@ -76,7 +76,7 @@ i나 A는 data object(variable)이다. 이는 **value**(값)을 저장하는 이
 
 - 박스에 적인 이름이 label(identifier)이다.
 
-다른 identifier인 printf, size_t, EXIT_SUCCESS와 관련된 declaration은 코드에 나오지 않는다. 이미 declaration된 상ㅌ이기 때문이며, .h파일에 저장되어 있다.(printf는 stdio.h, size_t와 EXIT_SUCCESS는 stdlib.h에 declaration되어 있다.)
+다른 identifier인 printf, size_t, EXIT_SUCCESS와 관련된 declaration은 코드에 나오지 않는다. 이미 declaration된 상태이기 때문이며, .h파일에 저장되어 있다.(printf는 stdio.h, size_t와 EXIT_SUCCESS는 stdlib.h에 declaration되어 있다.)
 
 > program에서 identifier가 visible(보이는)한 영역을 **scope**(스코프)라고 한다. identifier는 declaration이 속한 scope에 binding된다.
 
@@ -216,7 +216,7 @@ printf("element %zu is %g, \tits square is %g\n",
 
 앞서 printf function을 call(호출)했다. 함수 호출문에서는 함수 이름뿐만 아니라, 예제의 i, A[i], A[i]*A[i]처럼 **argument**(인수)도 함께 지장할 때가 많다. 이렇게 지정한 argument의 value은 call한 function으로 전달된다.
 
-그런데 여기서 중요한 점은, i가 argument의 일부이지만, printf function에서 이 i의 value 자체를 바꿀 수 없다는 점이다. 이런 호출 방식을 **call by value**(값 호출)이라고 하는데, 반대로 call한 function이 argument의 value를 변결할 수 있는 방식을 **call by reference**(참조 호출)이라고 한다.
+그런데 여기서 중요한 점은, i가 argument의 일부이지만, printf function에서 이 i의 value 자체를 바꿀 수 없다는 점이다. 이런 호출 방식을 **call by value**(값 호출)이라고 한다. (반대로 call한 function이 argument의 value를 변경할 수 있는 방식을 **call by reference**(참조 호출)이라고 한다.)
 
 > c언어는 call by reference를 지원하지 않는다. 대신 variable의 address를 알아내서, pointer로 전달하는 방식으로 제어권을 다른 function으로 넘기는 메커니즘을 사용한다.
 
