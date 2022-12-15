@@ -8,7 +8,7 @@
 
 > 단어 그대로 type을 '수정'하기 위한 modifier와, type을 '한정'하기 위한 qualifier이다. 
 
-> logic에서의 quantifier(한정자)와 단어가 다르다.( $\forall$ $\exists$ )
+> logic에서의 quantifier(한정자)와 단어가 다르다.( $\forall$ , $\exists$ )
 
 identifier를 type과 시각적으로 구분하기 위해서 일반적으로 다음과 같이 작성한다.
 
@@ -57,6 +57,12 @@ null이 될 수 없는 pointer는 항상 array로 표기하는 것이 좋다. �
 size_t strlen(char const string[static 1]);
 int main(int argc, char* argv[argc+1]);
 ```
+
+> int argc: argument count(인자 개수). main function에 전달되는 data 개수를 의미한다. (argv[argc+1]로 표기한 이유는 index가 0부터 시작하기 때문이다.)
+
+> int argv: argument vector(인자 벡터). main function에 전달되는 실제적인 data. 첫 번째 문자열은 항상 program의 실행경로이다.(예를 들어 argv[0]을 출력하면 /Users/erectbranch/C/test.c/Debug/test.c.exe를 출력한다.)
+
+> 따라서 사용자가 만약 다른 입력을 추가로 준다면 그 data는 argv[1]부터 들어가게 될 것이다. 또한 argc의 개수만큼 입력 조건을 맞추지 못한다면 Exception을 발생시킬 것이다.
 
 - 첫 번째 문장은 strlen이 유효한(null이 아닌) pointer를 받고, string element를 최소한 한 개 이상 받는다는 것을 강조했다.
 
