@@ -127,7 +127,7 @@ double largeA[N] = { 0 };
 
 size_t isset[2] = { 0, 0 };
 for (size_t i = 0; i < N; ++i) {
-    isset[!!large[i]] += 1;
+    isset[!!largeA[i]] += 1;
 }
 ```
 
