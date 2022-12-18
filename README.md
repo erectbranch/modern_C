@@ -25,13 +25,13 @@
 
 ### 레벨 0 만남
 
-1장 들어가며
+[1장 들어가며](https://github.com/erectbranch/modern_C/tree/master/ch01)
 
     1.1 명령형 프로그래밍
     1.2 컴파일하고 실행하기
     1.3 요약
 
-2장 프로그램의 핵심 구조
+[2장 프로그램의 핵심 구조](https://github.com/erectbranch/modern_C/tree/master/ch02)
 
     2.1 문법
     2.2 선언
@@ -44,14 +44,14 @@
 
 ### 레벨 1 친숙
 
-3장 결국은 제어
+[3장 결국은 제어](https://github.com/erectbranch/modern_C/tree/master/ch03)
 
     3.1 조건부 실행
     3.2 반복문
     3.3 다중 선택
     3.4 요약
 
-4장 계산 표현하기
+[4장 계산 표현하기](https://github.com/erectbranch/modern_C/tree/master/ch04)
 
     4.1 산술
     __4.1.1 +, -, *
@@ -64,7 +64,7 @@
     4.5 평가 순서
     4.6 요약
 
-5장 값과 데이터
+[5장 값과 데이터](https://github.com/erectbranch/modern_C/tree/master/ch05)
 
     5.1 추상 상태 기계
     __5.1.1 값
@@ -91,7 +91,7 @@
     __5.7.7 부동 소수점 데이터
     5.8 요약
 
-6장 파생 데이터 타입
+[6장 파생 데이터 타입](https://github.com/erectbranch/modern_C/tree/master/ch06)
 
     6.1 배열
     __6.1.1 배열 선언
